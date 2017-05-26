@@ -2,6 +2,7 @@ package com.baron.spider.processor;
 
 import com.baron.spider.pipeline.QuanWangDaiLiPipeLine;
 import org.apache.log4j.Logger;
+import org.springframework.stereotype.Component;
 import us.codecraft.webmagic.Page;
 import us.codecraft.webmagic.Site;
 import us.codecraft.webmagic.processor.PageProcessor;
@@ -9,6 +10,7 @@ import us.codecraft.webmagic.processor.PageProcessor;
 /**
  * Created by Jason on 2017/5/18.
  */
+@Component
 public class KuaiDaiLiPageProcessor implements PageProcessor {
     private static final Logger LOG = Logger.getLogger(KuaiDaiLiPageProcessor.class);
     private static final String KUAIDAILI_DOMAIN = "http://www.kuaidaili.com";

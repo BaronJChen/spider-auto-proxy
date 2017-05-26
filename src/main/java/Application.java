@@ -1,7 +1,5 @@
-import com.baron.spider.ProxySpiders;
-import com.baron.spider.pipeline.KuaiDaiLiPipeLine;
+import com.baron.spider.ProxySpiderBuilder;
 import com.baron.spider.pipeline.QuanWangDaiLiPipeLine;
-import com.baron.spider.processor.KuaiDaiLiPageProcessor;
 import com.baron.spider.processor.QuanWangDaiLiPageProcessor;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -27,7 +25,7 @@ public class Application {
     public CommandLineRunner startKuaiDaLiSpider() {
         return new CommandLineRunner() {
             public void run(String... strings) throws Exception {
-                Spider spider = ProxySpiders.createQuanWangDaiLiSpider(new QuanWangDaiLiPageProcessor(), Arrays.asList((Pipeline) new QuanWangDaiLiPipeLine()));
+                Spider spider = ProxySpiderBuilder.createQuanWangDaiLiSpider(new QuanWangDaiLiPageProcessor(), Arrays.asList((Pipeline) new QuanWangDaiLiPipeLine()));
                 spider.runAsync();
             }
         };

@@ -1,0 +1,444 @@
+00:14:53.125 [main] INFO  Application - Starting Application on S550CM with PID 7980 (C:\Users\Jason\IdeaProjects\spider-auto-proxy\target\classes started by Jason in C:\Users\Jason\IdeaProjects\spider-auto-proxy)
+00:14:53.133 [main] DEBUG Application - Running with Spring Boot v1.5.3.RELEASE, Spring v4.3.8.RELEASE
+00:14:53.135 [main] INFO  Application - No active profile set, falling back to default profiles: default
+00:14:55.225 [background-preinit] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+00:15:00.799 [main] DEBUG us.codecraft.webmagic.scheduler.QueueScheduler - push to queue http://www.goubanjia.com/free/index2.shtml
+00:15:00.804 [main] INFO  Application - Started Application in 8.632 seconds (JVM running for 12.307)
+00:15:01.244 [Thread-6] INFO  us.codecraft.webmagic.Spider - Spider http://www.goubanjia.com/free started!
+00:15:01.261 [pool-1-thread-1] INFO  us.codecraft.webmagic.downloader.HttpClientDownloader - downloading page http://www.goubanjia.com/free/index2.shtml
+00:15:01.687 [pool-1-thread-1] DEBUG us.codecraft.webmagic.downloader.CustomRedirectStrategy - Redirect requested to location 'http://www.goubanjia.com/free/index2.shtml'
+00:15:02.165 [pool-1-thread-1] INFO  com.baron.spider.processor.QuanWangDaiLiPageProcessor - quan wang dai li page processor process page http://www.goubanjia.com/free/index2.shtml
+00:15:02.431 [pool-1-thread-1] DEBUG us.codecraft.webmagic.scheduler.QueueScheduler - push to queue http://www.goubanjia.com/free/index.shtml
+00:15:02.432 [pool-1-thread-1] DEBUG us.codecraft.webmagic.scheduler.QueueScheduler - push to queue http://www.goubanjia.com/free/index1.shtml
+00:15:02.432 [pool-1-thread-1] DEBUG us.codecraft.webmagic.scheduler.QueueScheduler - push to queue http://www.goubanjia.com/free/index3.shtml
+00:15:02.433 [pool-1-thread-1] DEBUG us.codecraft.webmagic.scheduler.QueueScheduler - push to queue http://www.goubanjia.com/free/index4.shtml
+00:15:02.433 [pool-1-thread-1] DEBUG us.codecraft.webmagic.scheduler.QueueScheduler - push to queue http://www.goubanjia.com/free/index5.shtml
+00:15:02.434 [pool-1-thread-1] DEBUG us.codecraft.webmagic.scheduler.QueueScheduler - push to queue http://www.goubanjia.com/free/index6.shtml
+00:15:02.436 [pool-1-thread-1] DEBUG us.codecraft.webmagic.scheduler.QueueScheduler - push to queue http://www.goubanjia.com/free/index7.shtml
+00:15:02.437 [pool-1-thread-1] DEBUG us.codecraft.webmagic.scheduler.QueueScheduler - push to queue http://www.goubanjia.com/free/index8.shtml
+00:15:02.437 [pool-1-thread-1] INFO  com.baron.spider.pipeline.QuanWangDaiLiPipeLine - quanwang daili pipeline process task http://www.goubanjia.com/free
+00:15:07.456 [pool-1-thread-1] INFO  us.codecraft.webmagic.downloader.HttpClientDownloader - downloading page http://www.goubanjia.com/free/index1.shtml
+00:15:07.456 [pool-1-thread-2] INFO  us.codecraft.webmagic.downloader.HttpClientDownloader - downloading page http://www.goubanjia.com/free/index.shtml
+00:15:07.878 [pool-1-thread-1] INFO  com.baron.spider.processor.QuanWangDaiLiPageProcessor - quan wang dai li page processor process page http://www.goubanjia.com/free/index1.shtml
+00:15:07.913 [pool-1-thread-1] INFO  com.baron.spider.pipeline.QuanWangDaiLiPipeLine - quanwang daili pipeline process task http://www.goubanjia.com/free
+00:15:08.972 [pool-1-thread-2] INFO  com.baron.spider.processor.QuanWangDaiLiPageProcessor - quan wang dai li page processor process page http://www.goubanjia.com/free/index.shtml
+00:15:09.011 [pool-1-thread-2] INFO  com.baron.spider.pipeline.QuanWangDaiLiPipeLine - quanwang daili pipeline process task http://www.goubanjia.com/free
+00:15:12.918 [pool-1-thread-1] INFO  us.codecraft.webmagic.downloader.HttpClientDownloader - downloading page http://www.goubanjia.com/free/index3.shtml
+00:15:13.172 [pool-1-thread-1] INFO  com.baron.spider.processor.QuanWangDaiLiPageProcessor - quan wang dai li page processor process page http://www.goubanjia.com/free/index3.shtml
+00:15:13.189 [pool-1-thread-1] INFO  com.baron.spider.pipeline.QuanWangDaiLiPipeLine - quanwang daili pipeline process task http://www.goubanjia.com/free
+00:15:14.015 [pool-1-thread-2] INFO  us.codecraft.webmagic.downloader.HttpClientDownloader - downloading page http://www.goubanjia.com/free/index4.shtml
+00:15:14.065 [pool-1-thread-2] INFO  com.baron.spider.processor.QuanWangDaiLiPageProcessor - quan wang dai li page processor process page http://www.goubanjia.com/free/index4.shtml
+00:15:14.085 [pool-1-thread-2] INFO  com.baron.spider.pipeline.QuanWangDaiLiPipeLine - quanwang daili pipeline process task http://www.goubanjia.com/free
+00:15:18.193 [pool-1-thread-1] INFO  us.codecraft.webmagic.downloader.HttpClientDownloader - downloading page http://www.goubanjia.com/free/index5.shtml
+00:15:19.089 [pool-1-thread-2] INFO  us.codecraft.webmagic.downloader.HttpClientDownloader - downloading page http://www.goubanjia.com/free/index6.shtml
+00:15:19.137 [pool-1-thread-2] INFO  com.baron.spider.processor.QuanWangDaiLiPageProcessor - quan wang dai li page processor process page http://www.goubanjia.com/free/index6.shtml
+00:15:19.149 [pool-1-thread-2] INFO  com.baron.spider.pipeline.QuanWangDaiLiPipeLine - quanwang daili pipeline process task http://www.goubanjia.com/free
+00:15:19.180 [pool-1-thread-1] INFO  com.baron.spider.processor.QuanWangDaiLiPageProcessor - quan wang dai li page processor process page http://www.goubanjia.com/free/index5.shtml
+00:15:19.192 [pool-1-thread-1] INFO  com.baron.spider.pipeline.QuanWangDaiLiPipeLine - quanwang daili pipeline process task http://www.goubanjia.com/free
+00:15:24.153 [pool-1-thread-2] INFO  us.codecraft.webmagic.downloader.HttpClientDownloader - downloading page http://www.goubanjia.com/free/index7.shtml
+00:15:24.196 [pool-1-thread-1] INFO  us.codecraft.webmagic.downloader.HttpClientDownloader - downloading page http://www.goubanjia.com/free/index8.shtml
+00:15:24.239 [pool-1-thread-2] INFO  com.baron.spider.processor.QuanWangDaiLiPageProcessor - quan wang dai li page processor process page http://www.goubanjia.com/free/index7.shtml
+00:15:24.264 [pool-1-thread-2] DEBUG us.codecraft.webmagic.scheduler.QueueScheduler - push to queue http://www.goubanjia.com/free/index9.shtml
+00:15:24.265 [pool-1-thread-2] DEBUG us.codecraft.webmagic.scheduler.QueueScheduler - push to queue http://www.goubanjia.com/free/index10.shtml
+00:15:24.265 [pool-1-thread-2] INFO  com.baron.spider.pipeline.QuanWangDaiLiPipeLine - quanwang daili pipeline process task http://www.goubanjia.com/free
+00:15:25.248 [pool-1-thread-1] INFO  com.baron.spider.processor.QuanWangDaiLiPageProcessor - quan wang dai li page processor process page http://www.goubanjia.com/free/index8.shtml
+00:15:25.273 [pool-1-thread-1] DEBUG us.codecraft.webmagic.scheduler.QueueScheduler - push to queue http://www.goubanjia.com/free/index11.shtml
+00:15:25.274 [pool-1-thread-1] INFO  com.baron.spider.pipeline.QuanWangDaiLiPipeLine - quanwang daili pipeline process task http://www.goubanjia.com/free
+00:15:29.266 [pool-1-thread-2] INFO  us.codecraft.webmagic.downloader.HttpClientDownloader - downloading page http://www.goubanjia.com/free/index9.shtml
+00:15:29.315 [pool-1-thread-2] INFO  com.baron.spider.processor.QuanWangDaiLiPageProcessor - quan wang dai li page processor process page http://www.goubanjia.com/free/index9.shtml
+00:15:29.333 [pool-1-thread-2] DEBUG us.codecraft.webmagic.scheduler.QueueScheduler - push to queue http://www.goubanjia.com/free/index12.shtml
+00:15:29.333 [pool-1-thread-2] INFO  com.baron.spider.pipeline.QuanWangDaiLiPipeLine - quanwang daili pipeline process task http://www.goubanjia.com/free
+00:15:30.278 [pool-1-thread-1] INFO  us.codecraft.webmagic.downloader.HttpClientDownloader - downloading page http://www.goubanjia.com/free/index10.shtml
+00:15:30.322 [pool-1-thread-1] INFO  com.baron.spider.processor.QuanWangDaiLiPageProcessor - quan wang dai li page processor process page http://www.goubanjia.com/free/index10.shtml
+00:15:30.336 [pool-1-thread-1] DEBUG us.codecraft.webmagic.scheduler.QueueScheduler - push to queue http://www.goubanjia.com/free/index13.shtml
+00:15:30.336 [pool-1-thread-1] INFO  com.baron.spider.pipeline.QuanWangDaiLiPipeLine - quanwang daili pipeline process task http://www.goubanjia.com/free
+00:15:34.336 [pool-1-thread-2] INFO  us.codecraft.webmagic.downloader.HttpClientDownloader - downloading page http://www.goubanjia.com/free/index11.shtml
+00:15:34.894 [pool-1-thread-2] INFO  com.baron.spider.processor.QuanWangDaiLiPageProcessor - quan wang dai li page processor process page http://www.goubanjia.com/free/index11.shtml
+00:15:34.911 [pool-1-thread-2] DEBUG us.codecraft.webmagic.scheduler.QueueScheduler - push to queue http://www.goubanjia.com/free/index14.shtml
+00:15:34.912 [pool-1-thread-2] INFO  com.baron.spider.pipeline.QuanWangDaiLiPipeLine - quanwang daili pipeline process task http://www.goubanjia.com/free
+00:15:35.339 [pool-1-thread-1] INFO  us.codecraft.webmagic.downloader.HttpClientDownloader - downloading page http://www.goubanjia.com/free/index12.shtml
+00:15:35.428 [pool-1-thread-1] INFO  com.baron.spider.processor.QuanWangDaiLiPageProcessor - quan wang dai li page processor process page http://www.goubanjia.com/free/index12.shtml
+00:15:35.444 [pool-1-thread-1] DEBUG us.codecraft.webmagic.scheduler.QueueScheduler - push to queue http://www.goubanjia.com/free/index15.shtml
+00:15:35.444 [pool-1-thread-1] INFO  com.baron.spider.pipeline.QuanWangDaiLiPipeLine - quanwang daili pipeline process task http://www.goubanjia.com/free
+00:15:39.915 [pool-1-thread-2] INFO  us.codecraft.webmagic.downloader.HttpClientDownloader - downloading page http://www.goubanjia.com/free/index13.shtml
+00:15:39.992 [pool-1-thread-2] INFO  com.baron.spider.processor.QuanWangDaiLiPageProcessor - quan wang dai li page processor process page http://www.goubanjia.com/free/index13.shtml
+00:15:40.011 [pool-1-thread-2] DEBUG us.codecraft.webmagic.scheduler.QueueScheduler - push to queue http://www.goubanjia.com/free/index16.shtml
+00:15:40.011 [pool-1-thread-2] INFO  com.baron.spider.pipeline.QuanWangDaiLiPipeLine - quanwang daili pipeline process task http://www.goubanjia.com/free
+00:15:40.447 [pool-1-thread-1] INFO  us.codecraft.webmagic.downloader.HttpClientDownloader - downloading page http://www.goubanjia.com/free/index14.shtml
+00:15:40.535 [pool-1-thread-1] INFO  com.baron.spider.processor.QuanWangDaiLiPageProcessor - quan wang dai li page processor process page http://www.goubanjia.com/free/index14.shtml
+00:15:40.553 [pool-1-thread-1] DEBUG us.codecraft.webmagic.scheduler.QueueScheduler - push to queue http://www.goubanjia.com/free/index17.shtml
+00:15:40.553 [pool-1-thread-1] INFO  com.baron.spider.pipeline.QuanWangDaiLiPipeLine - quanwang daili pipeline process task http://www.goubanjia.com/free
+00:15:45.013 [pool-1-thread-2] INFO  us.codecraft.webmagic.downloader.HttpClientDownloader - downloading page http://www.goubanjia.com/free/index15.shtml
+00:15:45.093 [pool-1-thread-2] INFO  com.baron.spider.processor.QuanWangDaiLiPageProcessor - quan wang dai li page processor process page http://www.goubanjia.com/free/index15.shtml
+00:15:45.104 [pool-1-thread-2] DEBUG us.codecraft.webmagic.scheduler.QueueScheduler - push to queue http://www.goubanjia.com/free/index18.shtml
+00:15:45.104 [pool-1-thread-2] INFO  com.baron.spider.pipeline.QuanWangDaiLiPipeLine - quanwang daili pipeline process task http://www.goubanjia.com/free
+00:15:45.569 [pool-1-thread-1] INFO  us.codecraft.webmagic.downloader.HttpClientDownloader - downloading page http://www.goubanjia.com/free/index16.shtml
+00:15:45.895 [pool-1-thread-1] INFO  com.baron.spider.processor.QuanWangDaiLiPageProcessor - quan wang dai li page processor process page http://www.goubanjia.com/free/index16.shtml
+00:15:45.907 [pool-1-thread-1] DEBUG us.codecraft.webmagic.scheduler.QueueScheduler - push to queue http://www.goubanjia.com/free/index19.shtml
+00:15:45.908 [pool-1-thread-1] INFO  com.baron.spider.pipeline.QuanWangDaiLiPipeLine - quanwang daili pipeline process task http://www.goubanjia.com/free
+00:15:50.268 [pool-1-thread-2] INFO  us.codecraft.webmagic.downloader.HttpClientDownloader - downloading page http://www.goubanjia.com/free/index17.shtml
+00:15:50.353 [pool-1-thread-2] INFO  com.baron.spider.processor.QuanWangDaiLiPageProcessor - quan wang dai li page processor process page http://www.goubanjia.com/free/index17.shtml
+00:15:50.376 [pool-1-thread-2] DEBUG us.codecraft.webmagic.scheduler.QueueScheduler - push to queue http://www.goubanjia.com/free/index20.shtml
+00:15:50.377 [pool-1-thread-2] INFO  com.baron.spider.pipeline.QuanWangDaiLiPipeLine - quanwang daili pipeline process task http://www.goubanjia.com/free
+00:15:50.909 [pool-1-thread-1] INFO  us.codecraft.webmagic.downloader.HttpClientDownloader - downloading page http://www.goubanjia.com/free/index18.shtml
+00:15:51.523 [pool-1-thread-1] INFO  com.baron.spider.processor.QuanWangDaiLiPageProcessor - quan wang dai li page processor process page http://www.goubanjia.com/free/index18.shtml
+00:15:51.536 [pool-1-thread-1] DEBUG us.codecraft.webmagic.scheduler.QueueScheduler - push to queue http://www.goubanjia.com/free/index21.shtml
+00:15:51.537 [pool-1-thread-1] INFO  com.baron.spider.pipeline.QuanWangDaiLiPipeLine - quanwang daili pipeline process task http://www.goubanjia.com/free
+00:16:08.972 [main] INFO  Application - Starting Application on S550CM with PID 2220 (C:\Users\Jason\IdeaProjects\spider-auto-proxy\target\classes started by Jason in C:\Users\Jason\IdeaProjects\spider-auto-proxy)
+00:16:08.983 [main] DEBUG Application - Running with Spring Boot v1.5.3.RELEASE, Spring v4.3.8.RELEASE
+00:16:08.984 [main] INFO  Application - No active profile set, falling back to default profiles: default
+00:16:09.989 [background-preinit] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+00:16:12.720 [main] WARN  org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start embedded container; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatEmbeddedServletContainerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/EmbeddedServletContainerAutoConfiguration$EmbeddedTomcat.class]: BeanPostProcessor before instantiation of bean failed; nested exception is java.lang.NoClassDefFoundError: org/aspectj/weaver/tools/PointcutPrimitive
+00:16:12.778 [main] ERROR org.springframework.boot.SpringApplication - Application startup failed
+org.springframework.context.ApplicationContextException: Unable to start embedded container; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatEmbeddedServletContainerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/EmbeddedServletContainerAutoConfiguration$EmbeddedTomcat.class]: BeanPostProcessor before instantiation of bean failed; nested exception is java.lang.NoClassDefFoundError: org/aspectj/weaver/tools/PointcutPrimitive
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.onRefresh(EmbeddedWebApplicationContext.java:137)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:536)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:370)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1162)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1151)
+	at Application.main(Application.java:21)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatEmbeddedServletContainerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/EmbeddedServletContainerAutoConfiguration$EmbeddedTomcat.class]: BeanPostProcessor before instantiation of bean failed; nested exception is java.lang.NoClassDefFoundError: org/aspectj/weaver/tools/PointcutPrimitive
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:479)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.getEmbeddedServletContainerFactory(EmbeddedWebApplicationContext.java:199)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.createEmbeddedServletContainer(EmbeddedWebApplicationContext.java:162)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.onRefresh(EmbeddedWebApplicationContext.java:134)
+	... 8 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: org/aspectj/weaver/tools/PointcutPrimitive
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.<clinit>(AspectJExpressionPointcut.java:87)
+	at org.springframework.aop.aspectj.annotation.ReflectiveAspectJAdvisorFactory.getPointcut(ReflectiveAspectJAdvisorFactory.java:220)
+	at org.springframework.aop.aspectj.annotation.ReflectiveAspectJAdvisorFactory.getAdvisor(ReflectiveAspectJAdvisorFactory.java:203)
+	at org.springframework.aop.aspectj.annotation.ReflectiveAspectJAdvisorFactory.getAdvisors(ReflectiveAspectJAdvisorFactory.java:136)
+	at org.springframework.aop.aspectj.annotation.BeanFactoryAspectJAdvisorsBuilder.buildAspectJAdvisors(BeanFactoryAspectJAdvisorsBuilder.java:109)
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.findCandidateAdvisors(AnnotationAwareAspectJAutoProxyCreator.java:90)
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:103)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:248)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1037)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1011)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:473)
+	... 15 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.aspectj.weaver.tools.PointcutPrimitive
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 26 common frames omitted
+00:16:25.076 [main] INFO  Application - Starting Application on S550CM with PID 2500 (C:\Users\Jason\IdeaProjects\spider-auto-proxy\target\classes started by Jason in C:\Users\Jason\IdeaProjects\spider-auto-proxy)
+00:16:25.082 [main] DEBUG Application - Running with Spring Boot v1.5.3.RELEASE, Spring v4.3.8.RELEASE
+00:16:25.082 [main] INFO  Application - No active profile set, falling back to default profiles: default
+00:16:25.899 [background-preinit] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+00:16:27.776 [main] WARN  org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start embedded container; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatEmbeddedServletContainerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/EmbeddedServletContainerAutoConfiguration$EmbeddedTomcat.class]: BeanPostProcessor before instantiation of bean failed; nested exception is java.lang.NoClassDefFoundError: org/aspectj/weaver/tools/PointcutPrimitive
+00:16:27.793 [main] ERROR org.springframework.boot.SpringApplication - Application startup failed
+org.springframework.context.ApplicationContextException: Unable to start embedded container; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatEmbeddedServletContainerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/EmbeddedServletContainerAutoConfiguration$EmbeddedTomcat.class]: BeanPostProcessor before instantiation of bean failed; nested exception is java.lang.NoClassDefFoundError: org/aspectj/weaver/tools/PointcutPrimitive
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.onRefresh(EmbeddedWebApplicationContext.java:137)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:536)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:370)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1162)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1151)
+	at Application.main(Application.java:21)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatEmbeddedServletContainerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/EmbeddedServletContainerAutoConfiguration$EmbeddedTomcat.class]: BeanPostProcessor before instantiation of bean failed; nested exception is java.lang.NoClassDefFoundError: org/aspectj/weaver/tools/PointcutPrimitive
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:479)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.getEmbeddedServletContainerFactory(EmbeddedWebApplicationContext.java:199)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.createEmbeddedServletContainer(EmbeddedWebApplicationContext.java:162)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.onRefresh(EmbeddedWebApplicationContext.java:134)
+	... 8 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: org/aspectj/weaver/tools/PointcutPrimitive
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.<clinit>(AspectJExpressionPointcut.java:87)
+	at org.springframework.aop.aspectj.annotation.ReflectiveAspectJAdvisorFactory.getPointcut(ReflectiveAspectJAdvisorFactory.java:220)
+	at org.springframework.aop.aspectj.annotation.ReflectiveAspectJAdvisorFactory.getAdvisor(ReflectiveAspectJAdvisorFactory.java:203)
+	at org.springframework.aop.aspectj.annotation.ReflectiveAspectJAdvisorFactory.getAdvisors(ReflectiveAspectJAdvisorFactory.java:136)
+	at org.springframework.aop.aspectj.annotation.BeanFactoryAspectJAdvisorsBuilder.buildAspectJAdvisors(BeanFactoryAspectJAdvisorsBuilder.java:109)
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.findCandidateAdvisors(AnnotationAwareAspectJAutoProxyCreator.java:90)
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:103)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:248)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1037)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1011)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:473)
+	... 15 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.aspectj.weaver.tools.PointcutPrimitive
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 26 common frames omitted
+00:17:50.807 [main] INFO  Application - Starting Application on S550CM with PID 9596 (C:\Users\Jason\IdeaProjects\spider-auto-proxy\target\classes started by Jason in C:\Users\Jason\IdeaProjects\spider-auto-proxy)
+00:17:50.823 [main] DEBUG Application - Running with Spring Boot v1.5.3.RELEASE, Spring v4.3.8.RELEASE
+00:17:50.824 [main] INFO  Application - No active profile set, falling back to default profiles: default
+00:18:37.088 [main] INFO  Application - Starting Application on S550CM with PID 7540 (C:\Users\Jason\IdeaProjects\spider-auto-proxy\target\classes started by Jason in C:\Users\Jason\IdeaProjects\spider-auto-proxy)
+00:18:37.100 [main] DEBUG Application - Running with Spring Boot v1.5.3.RELEASE, Spring v4.3.8.RELEASE
+00:18:37.101 [main] INFO  Application - No active profile set, falling back to default profiles: default
+00:18:37.771 [background-preinit] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+00:18:39.936 [main] WARN  org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start embedded container; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.boot.autoconfigure.web.EmbeddedServletContainerAutoConfiguration$EmbeddedTomcat': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: error at ::0 can't find referenced pointcut pointcut
+00:18:39.958 [main] ERROR org.springframework.boot.SpringApplication - Application startup failed
+org.springframework.context.ApplicationContextException: Unable to start embedded container; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.boot.autoconfigure.web.EmbeddedServletContainerAutoConfiguration$EmbeddedTomcat': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: error at ::0 can't find referenced pointcut pointcut
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.onRefresh(EmbeddedWebApplicationContext.java:137)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:536)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:370)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1162)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1151)
+	at Application.main(Application.java:21)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.boot.autoconfigure.web.EmbeddedServletContainerAutoConfiguration$EmbeddedTomcat': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: error at ::0 can't find referenced pointcut pointcut
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.getEmbeddedServletContainerFactory(EmbeddedWebApplicationContext.java:199)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.createEmbeddedServletContainer(EmbeddedWebApplicationContext.java:162)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.onRefresh(EmbeddedWebApplicationContext.java:134)
+	... 8 common frames omitted
+Caused by: java.lang.IllegalArgumentException: error at ::0 can't find referenced pointcut pointcut
+	at org.aspectj.weaver.tools.PointcutParser.parsePointcutExpression(PointcutParser.java:301)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.buildPointcutExpression(AspectJExpressionPointcut.java:217)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.checkReadyToMatch(AspectJExpressionPointcut.java:190)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.getClassFilter(AspectJExpressionPointcut.java:169)
+	at org.springframework.aop.support.AopUtils.canApply(AopUtils.java:220)
+	at org.springframework.aop.support.AopUtils.canApply(AopUtils.java:279)
+	at org.springframework.aop.support.AopUtils.findAdvisorsThatCanApply(AopUtils.java:311)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findAdvisorsThatCanApply(AbstractAdvisorAutoProxyCreator.java:119)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findEligibleAdvisors(AbstractAdvisorAutoProxyCreator.java:89)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.getAdvicesAndAdvisorsForBean(AbstractAdvisorAutoProxyCreator.java:70)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.wrapIfNecessary(AbstractAutoProxyCreator.java:346)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessAfterInitialization(AbstractAutoProxyCreator.java:298)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:423)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1633)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	... 25 common frames omitted
+00:19:52.935 [main] INFO  Application - Starting Application on S550CM with PID 2272 (C:\Users\Jason\IdeaProjects\spider-auto-proxy\target\classes started by Jason in C:\Users\Jason\IdeaProjects\spider-auto-proxy)
+00:19:52.943 [main] DEBUG Application - Running with Spring Boot v1.5.3.RELEASE, Spring v4.3.8.RELEASE
+00:19:52.944 [main] INFO  Application - No active profile set, falling back to default profiles: default
+00:19:53.804 [background-preinit] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+00:19:55.894 [main] WARN  org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start embedded container; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.boot.autoconfigure.web.EmbeddedServletContainerAutoConfiguration$EmbeddedTomcat': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: Pointcut is not well-formed: expecting '(' at character position 0
+pointcut
+^
+
+00:19:55.912 [main] ERROR org.springframework.boot.SpringApplication - Application startup failed
+org.springframework.context.ApplicationContextException: Unable to start embedded container; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.boot.autoconfigure.web.EmbeddedServletContainerAutoConfiguration$EmbeddedTomcat': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: Pointcut is not well-formed: expecting '(' at character position 0
+pointcut
+^
+
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.onRefresh(EmbeddedWebApplicationContext.java:137)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:536)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:370)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1162)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1151)
+	at Application.main(Application.java:21)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.boot.autoconfigure.web.EmbeddedServletContainerAutoConfiguration$EmbeddedTomcat': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: Pointcut is not well-formed: expecting '(' at character position 0
+pointcut
+^
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.getEmbeddedServletContainerFactory(EmbeddedWebApplicationContext.java:199)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.createEmbeddedServletContainer(EmbeddedWebApplicationContext.java:162)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.onRefresh(EmbeddedWebApplicationContext.java:134)
+	... 8 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Pointcut is not well-formed: expecting '(' at character position 0
+pointcut
+^
+
+	at org.aspectj.weaver.tools.PointcutParser.resolvePointcutExpression(PointcutParser.java:316)
+	at org.aspectj.weaver.tools.PointcutParser.parsePointcutExpression(PointcutParser.java:294)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.buildPointcutExpression(AspectJExpressionPointcut.java:217)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.checkReadyToMatch(AspectJExpressionPointcut.java:190)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.getClassFilter(AspectJExpressionPointcut.java:169)
+	at org.springframework.aop.support.AopUtils.canApply(AopUtils.java:220)
+	at org.springframework.aop.support.AopUtils.canApply(AopUtils.java:279)
+	at org.springframework.aop.support.AopUtils.findAdvisorsThatCanApply(AopUtils.java:311)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findAdvisorsThatCanApply(AbstractAdvisorAutoProxyCreator.java:119)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findEligibleAdvisors(AbstractAdvisorAutoProxyCreator.java:89)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.getAdvicesAndAdvisorsForBean(AbstractAdvisorAutoProxyCreator.java:70)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.wrapIfNecessary(AbstractAutoProxyCreator.java:346)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessAfterInitialization(AbstractAutoProxyCreator.java:298)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:423)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1633)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	... 25 common frames omitted
+00:20:16.573 [main] INFO  Application - Starting Application on S550CM with PID 9628 (C:\Users\Jason\IdeaProjects\spider-auto-proxy\target\classes started by Jason in C:\Users\Jason\IdeaProjects\spider-auto-proxy)
+00:20:16.582 [main] DEBUG Application - Running with Spring Boot v1.5.3.RELEASE, Spring v4.3.8.RELEASE
+00:20:16.584 [main] INFO  Application - No active profile set, falling back to default profiles: default
+00:20:17.477 [background-preinit] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+00:20:22.922 [main] DEBUG us.codecraft.webmagic.scheduler.QueueScheduler - push to queue http://www.goubanjia.com/free/index2.shtml
+00:20:22.926 [main] INFO  Application - Started Application in 6.978 seconds (JVM running for 8.359)
+00:20:23.092 [Thread-6] INFO  us.codecraft.webmagic.Spider - Spider http://www.goubanjia.com/free started!
+00:20:23.094 [pool-1-thread-1] INFO  us.codecraft.webmagic.downloader.HttpClientDownloader - downloading page http://www.goubanjia.com/free/index2.shtml
+00:20:23.314 [pool-1-thread-1] DEBUG us.codecraft.webmagic.downloader.CustomRedirectStrategy - Redirect requested to location 'http://www.goubanjia.com/free/index2.shtml'
+00:20:23.376 [pool-1-thread-1] INFO  com.baron.spider.processor.QuanWangDaiLiPageProcessor - quan wang dai li page processor process page http://www.goubanjia.com/free/index2.shtml
+00:20:23.577 [pool-1-thread-1] DEBUG us.codecraft.webmagic.scheduler.QueueScheduler - push to queue http://www.goubanjia.com/free/index.shtml
+00:20:23.578 [pool-1-thread-1] DEBUG us.codecraft.webmagic.scheduler.QueueScheduler - push to queue http://www.goubanjia.com/free/index1.shtml
+00:20:23.578 [pool-1-thread-1] DEBUG us.codecraft.webmagic.scheduler.QueueScheduler - push to queue http://www.goubanjia.com/free/index3.shtml
+00:20:23.578 [pool-1-thread-1] DEBUG us.codecraft.webmagic.scheduler.QueueScheduler - push to queue http://www.goubanjia.com/free/index4.shtml
+00:20:23.579 [pool-1-thread-1] DEBUG us.codecraft.webmagic.scheduler.QueueScheduler - push to queue http://www.goubanjia.com/free/index5.shtml
+00:20:23.579 [pool-1-thread-1] DEBUG us.codecraft.webmagic.scheduler.QueueScheduler - push to queue http://www.goubanjia.com/free/index6.shtml
+00:20:23.579 [pool-1-thread-1] DEBUG us.codecraft.webmagic.scheduler.QueueScheduler - push to queue http://www.goubanjia.com/free/index7.shtml
+00:20:23.579 [pool-1-thread-1] DEBUG us.codecraft.webmagic.scheduler.QueueScheduler - push to queue http://www.goubanjia.com/free/index8.shtml
+00:20:23.579 [pool-1-thread-1] INFO  com.baron.spider.pipeline.QuanWangDaiLiPipeLine - quanwang daili pipeline process task http://www.goubanjia.com/free
+00:20:28.586 [pool-1-thread-1] INFO  us.codecraft.webmagic.downloader.HttpClientDownloader - downloading page http://www.goubanjia.com/free/index1.shtml
+00:20:28.586 [pool-1-thread-2] INFO  us.codecraft.webmagic.downloader.HttpClientDownloader - downloading page http://www.goubanjia.com/free/index.shtml
+00:20:28.641 [pool-1-thread-2] INFO  com.baron.spider.processor.QuanWangDaiLiPageProcessor - quan wang dai li page processor process page http://www.goubanjia.com/free/index.shtml
+00:20:28.702 [pool-1-thread-2] INFO  com.baron.spider.pipeline.QuanWangDaiLiPipeLine - quanwang daili pipeline process task http://www.goubanjia.com/free
+00:20:28.741 [pool-1-thread-1] INFO  com.baron.spider.processor.QuanWangDaiLiPageProcessor - quan wang dai li page processor process page http://www.goubanjia.com/free/index1.shtml
+00:20:28.766 [pool-1-thread-1] INFO  com.baron.spider.pipeline.QuanWangDaiLiPipeLine - quanwang daili pipeline process task http://www.goubanjia.com/free
+00:20:33.704 [pool-1-thread-2] INFO  us.codecraft.webmagic.downloader.HttpClientDownloader - downloading page http://www.goubanjia.com/free/index3.shtml
+00:20:33.750 [pool-1-thread-2] INFO  com.baron.spider.processor.QuanWangDaiLiPageProcessor - quan wang dai li page processor process page http://www.goubanjia.com/free/index3.shtml
+00:20:33.764 [pool-1-thread-2] INFO  com.baron.spider.pipeline.QuanWangDaiLiPipeLine - quanwang daili pipeline process task http://www.goubanjia.com/free
+00:20:33.769 [pool-1-thread-1] INFO  us.codecraft.webmagic.downloader.HttpClientDownloader - downloading page http://www.goubanjia.com/free/index4.shtml
+00:20:33.806 [pool-1-thread-1] INFO  com.baron.spider.processor.QuanWangDaiLiPageProcessor - quan wang dai li page processor process page http://www.goubanjia.com/free/index4.shtml
+00:20:33.820 [pool-1-thread-1] INFO  com.baron.spider.pipeline.QuanWangDaiLiPipeLine - quanwang daili pipeline process task http://www.goubanjia.com/free
+00:20:38.768 [pool-1-thread-2] INFO  us.codecraft.webmagic.downloader.HttpClientDownloader - downloading page http://www.goubanjia.com/free/index5.shtml
+00:20:38.808 [pool-1-thread-2] INFO  com.baron.spider.processor.QuanWangDaiLiPageProcessor - quan wang dai li page processor process page http://www.goubanjia.com/free/index5.shtml
+00:20:38.828 [pool-1-thread-1] INFO  us.codecraft.webmagic.downloader.HttpClientDownloader - downloading page http://www.goubanjia.com/free/index6.shtml
+00:20:38.830 [pool-1-thread-2] INFO  com.baron.spider.pipeline.QuanWangDaiLiPipeLine - quanwang daili pipeline process task http://www.goubanjia.com/free
+00:20:38.866 [pool-1-thread-1] INFO  com.baron.spider.processor.QuanWangDaiLiPageProcessor - quan wang dai li page processor process page http://www.goubanjia.com/free/index6.shtml
+00:20:38.877 [pool-1-thread-1] INFO  com.baron.spider.pipeline.QuanWangDaiLiPipeLine - quanwang daili pipeline process task http://www.goubanjia.com/free
+00:20:43.836 [pool-1-thread-2] INFO  us.codecraft.webmagic.downloader.HttpClientDownloader - downloading page http://www.goubanjia.com/free/index7.shtml
+00:20:43.879 [pool-1-thread-1] INFO  us.codecraft.webmagic.downloader.HttpClientDownloader - downloading page http://www.goubanjia.com/free/index8.shtml
+00:20:43.882 [pool-1-thread-2] INFO  com.baron.spider.processor.QuanWangDaiLiPageProcessor - quan wang dai li page processor process page http://www.goubanjia.com/free/index7.shtml
+00:20:43.893 [pool-1-thread-2] DEBUG us.codecraft.webmagic.scheduler.QueueScheduler - push to queue http://www.goubanjia.com/free/index9.shtml
+00:20:43.893 [pool-1-thread-2] DEBUG us.codecraft.webmagic.scheduler.QueueScheduler - push to queue http://www.goubanjia.com/free/index10.shtml
+00:20:43.894 [pool-1-thread-2] INFO  com.baron.spider.pipeline.QuanWangDaiLiPipeLine - quanwang daili pipeline process task http://www.goubanjia.com/free
+00:20:43.928 [pool-1-thread-1] INFO  com.baron.spider.processor.QuanWangDaiLiPageProcessor - quan wang dai li page processor process page http://www.goubanjia.com/free/index8.shtml
+00:20:43.938 [pool-1-thread-1] DEBUG us.codecraft.webmagic.scheduler.QueueScheduler - push to queue http://www.goubanjia.com/free/index11.shtml
+00:20:43.938 [pool-1-thread-1] INFO  com.baron.spider.pipeline.QuanWangDaiLiPipeLine - quanwang daili pipeline process task http://www.goubanjia.com/free
+00:20:52.931 [main] INFO  Application - Starting Application on S550CM with PID 7916 (C:\Users\Jason\IdeaProjects\spider-auto-proxy\target\classes started by Jason in C:\Users\Jason\IdeaProjects\spider-auto-proxy)
+00:20:52.939 [main] DEBUG Application - Running with Spring Boot v1.5.3.RELEASE, Spring v4.3.8.RELEASE
+00:20:52.940 [main] INFO  Application - No active profile set, falling back to default profiles: default
+00:20:53.872 [background-preinit] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+00:20:58.107 [main] DEBUG us.codecraft.webmagic.scheduler.QueueScheduler - push to queue http://www.goubanjia.com/free/index2.shtml
+00:20:58.110 [main] INFO  Application - Started Application in 5.774 seconds (JVM running for 7.036)
+00:20:58.240 [Thread-6] INFO  us.codecraft.webmagic.Spider - Spider http://www.goubanjia.com/free started!
+00:20:58.241 [pool-1-thread-1] INFO  us.codecraft.webmagic.downloader.HttpClientDownloader - downloading page http://www.goubanjia.com/free/index2.shtml
+00:20:58.500 [pool-1-thread-1] DEBUG us.codecraft.webmagic.downloader.CustomRedirectStrategy - Redirect requested to location 'http://www.goubanjia.com/free/index2.shtml'
+00:20:58.570 [pool-1-thread-1] INFO  com.baron.spider.processor.QuanWangDaiLiPageProcessor - quan wang dai li page processor process page http://www.goubanjia.com/free/index2.shtml
+00:20:58.830 [pool-1-thread-1] DEBUG us.codecraft.webmagic.scheduler.QueueScheduler - push to queue http://www.goubanjia.com/free/index.shtml
+00:20:58.830 [pool-1-thread-1] DEBUG us.codecraft.webmagic.scheduler.QueueScheduler - push to queue http://www.goubanjia.com/free/index1.shtml
+00:20:58.831 [pool-1-thread-1] DEBUG us.codecraft.webmagic.scheduler.QueueScheduler - push to queue http://www.goubanjia.com/free/index3.shtml
+00:20:58.831 [pool-1-thread-1] DEBUG us.codecraft.webmagic.scheduler.QueueScheduler - push to queue http://www.goubanjia.com/free/index4.shtml
+00:20:58.832 [pool-1-thread-1] DEBUG us.codecraft.webmagic.scheduler.QueueScheduler - push to queue http://www.goubanjia.com/free/index5.shtml
+00:20:58.832 [pool-1-thread-1] DEBUG us.codecraft.webmagic.scheduler.QueueScheduler - push to queue http://www.goubanjia.com/free/index6.shtml
+00:20:58.833 [pool-1-thread-1] DEBUG us.codecraft.webmagic.scheduler.QueueScheduler - push to queue http://www.goubanjia.com/free/index7.shtml
+00:20:58.833 [pool-1-thread-1] DEBUG us.codecraft.webmagic.scheduler.QueueScheduler - push to queue http://www.goubanjia.com/free/index8.shtml
+00:20:58.834 [pool-1-thread-1] INFO  com.baron.spider.pipeline.QuanWangDaiLiPipeLine - quanwang daili pipeline process task http://www.goubanjia.com/free
+00:21:03.849 [pool-1-thread-1] INFO  us.codecraft.webmagic.downloader.HttpClientDownloader - downloading page http://www.goubanjia.com/free/index1.shtml
+00:21:03.849 [pool-1-thread-2] INFO  us.codecraft.webmagic.downloader.HttpClientDownloader - downloading page http://www.goubanjia.com/free/index.shtml
+00:21:04.189 [pool-1-thread-1] INFO  com.baron.spider.processor.QuanWangDaiLiPageProcessor - quan wang dai li page processor process page http://www.goubanjia.com/free/index1.shtml
+00:21:04.221 [pool-1-thread-1] INFO  com.baron.spider.pipeline.QuanWangDaiLiPipeLine - quanwang daili pipeline process task http://www.goubanjia.com/free
+00:21:06.862 [pool-1-thread-2] WARN  us.codecraft.webmagic.downloader.HttpClientDownloader - download page http://www.goubanjia.com/free/index.shtml error
+org.apache.http.conn.ConnectTimeoutException: Connect to www.goubanjia.com:80 [www.goubanjia.com/118.190.66.94] failed: connect timed out
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:150)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at us.codecraft.webmagic.downloader.HttpClientDownloader.download(HttpClientDownloader.java:102)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:404)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:321)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:141)
+	... 16 common frames omitted
+00:21:09.225 [pool-1-thread-1] INFO  us.codecraft.webmagic.downloader.HttpClientDownloader - downloading page http://www.goubanjia.com/free/index3.shtml
+00:21:09.289 [pool-1-thread-1] INFO  com.baron.spider.processor.QuanWangDaiLiPageProcessor - quan wang dai li page processor process page http://www.goubanjia.com/free/index3.shtml
+00:21:09.317 [pool-1-thread-1] INFO  com.baron.spider.pipeline.QuanWangDaiLiPipeLine - quanwang daili pipeline process task http://www.goubanjia.com/free
+00:21:11.869 [pool-1-thread-2] INFO  us.codecraft.webmagic.downloader.HttpClientDownloader - downloading page http://www.goubanjia.com/free/index4.shtml
+00:21:11.912 [pool-1-thread-2] INFO  com.baron.spider.processor.QuanWangDaiLiPageProcessor - quan wang dai li page processor process page http://www.goubanjia.com/free/index4.shtml
+00:21:11.937 [pool-1-thread-2] INFO  com.baron.spider.pipeline.QuanWangDaiLiPipeLine - quanwang daili pipeline process task http://www.goubanjia.com/free
+00:21:14.320 [pool-1-thread-1] INFO  us.codecraft.webmagic.downloader.HttpClientDownloader - downloading page http://www.goubanjia.com/free/index5.shtml
+00:21:14.369 [pool-1-thread-1] INFO  com.baron.spider.processor.QuanWangDaiLiPageProcessor - quan wang dai li page processor process page http://www.goubanjia.com/free/index5.shtml
+00:21:14.396 [pool-1-thread-1] INFO  com.baron.spider.pipeline.QuanWangDaiLiPipeLine - quanwang daili pipeline process task http://www.goubanjia.com/free
+00:21:16.939 [pool-1-thread-2] INFO  us.codecraft.webmagic.downloader.HttpClientDownloader - downloading page http://www.goubanjia.com/free/index6.shtml
+00:21:16.986 [pool-1-thread-2] INFO  com.baron.spider.processor.QuanWangDaiLiPageProcessor - quan wang dai li page processor process page http://www.goubanjia.com/free/index6.shtml
+00:21:17.004 [pool-1-thread-2] INFO  com.baron.spider.pipeline.QuanWangDaiLiPipeLine - quanwang daili pipeline process task http://www.goubanjia.com/free
+00:21:19.398 [pool-1-thread-1] INFO  us.codecraft.webmagic.downloader.HttpClientDownloader - downloading page http://www.goubanjia.com/free/index7.shtml
+00:21:19.452 [pool-1-thread-1] INFO  com.baron.spider.processor.QuanWangDaiLiPageProcessor - quan wang dai li page processor process page http://www.goubanjia.com/free/index7.shtml
+00:21:19.474 [pool-1-thread-1] DEBUG us.codecraft.webmagic.scheduler.QueueScheduler - push to queue http://www.goubanjia.com/free/index9.shtml
+00:21:19.475 [pool-1-thread-1] DEBUG us.codecraft.webmagic.scheduler.QueueScheduler - push to queue http://www.goubanjia.com/free/index10.shtml
+00:21:19.476 [pool-1-thread-1] INFO  com.baron.spider.pipeline.QuanWangDaiLiPipeLine - quanwang daili pipeline process task http://www.goubanjia.com/free
+00:21:22.008 [pool-1-thread-2] INFO  us.codecraft.webmagic.downloader.HttpClientDownloader - downloading page http://www.goubanjia.com/free/index8.shtml
+00:21:22.062 [pool-1-thread-2] INFO  com.baron.spider.processor.QuanWangDaiLiPageProcessor - quan wang dai li page processor process page http://www.goubanjia.com/free/index8.shtml
+00:21:22.079 [pool-1-thread-2] DEBUG us.codecraft.webmagic.scheduler.QueueScheduler - push to queue http://www.goubanjia.com/free/index11.shtml
+00:21:22.079 [pool-1-thread-2] INFO  com.baron.spider.pipeline.QuanWangDaiLiPipeLine - quanwang daili pipeline process task http://www.goubanjia.com/free
+00:21:24.480 [pool-1-thread-1] INFO  us.codecraft.webmagic.downloader.HttpClientDownloader - downloading page http://www.goubanjia.com/free/index9.shtml
+00:21:24.524 [pool-1-thread-1] INFO  com.baron.spider.processor.QuanWangDaiLiPageProcessor - quan wang dai li page processor process page http://www.goubanjia.com/free/index9.shtml
+00:21:24.533 [pool-1-thread-1] INFO  com.baron.spider.pipeline.QuanWangDaiLiPipeLine - quanwang daili pipeline process task http://www.goubanjia.com/free
+00:21:24.534 [pool-1-thread-1] ERROR us.codecraft.webmagic.Spider - process request Request{url='http://www.goubanjia.com/free/index9.shtml', method='null', extras={statusCode=200}, priority=0} error
+java.lang.IndexOutOfBoundsException: Index: 9, Size: 9
+	at java.util.ArrayList.rangeCheck(ArrayList.java:653)
+	at java.util.ArrayList.get(ArrayList.java:429)
+	at com.baron.spider.pipeline.QuanWangDaiLiPipeLine.process(QuanWangDaiLiPipeLine.java:36)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:420)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:321)
+	at us.codecraft.webmagic.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+00:21:24.535 [pool-1-thread-1] INFO  us.codecraft.webmagic.downloader.HttpClientDownloader - downloading page http://www.goubanjia.com/free/index10.shtml
+00:21:24.629 [pool-1-thread-1] INFO  com.baron.spider.processor.QuanWangDaiLiPageProcessor - quan wang dai li page processor process page http://www.goubanjia.com/free/index10.shtml
+00:21:24.642 [pool-1-thread-1] DEBUG us.codecraft.webmagic.scheduler.QueueScheduler - push to queue http://www.goubanjia.com/free/index12.shtml
+00:21:24.642 [pool-1-thread-1] DEBUG us.codecraft.webmagic.scheduler.QueueScheduler - push to queue http://www.goubanjia.com/free/index13.shtml
+00:21:24.642 [pool-1-thread-1] INFO  com.baron.spider.pipeline.QuanWangDaiLiPipeLine - quanwang daili pipeline process task http://www.goubanjia.com/free
+00:21:27.082 [pool-1-thread-2] INFO  us.codecraft.webmagic.downloader.HttpClientDownloader - downloading page http://www.goubanjia.com/free/index11.shtml
+00:21:27.172 [pool-1-thread-2] INFO  com.baron.spider.processor.QuanWangDaiLiPageProcessor - quan wang dai li page processor process page http://www.goubanjia.com/free/index11.shtml
+00:21:27.189 [pool-1-thread-2] DEBUG us.codecraft.webmagic.scheduler.QueueScheduler - push to queue http://www.goubanjia.com/free/index14.shtml
+00:21:27.189 [pool-1-thread-2] INFO  com.baron.spider.pipeline.QuanWangDaiLiPipeLine - quanwang daili pipeline process task http://www.goubanjia.com/free
+00:21:29.643 [pool-1-thread-1] INFO  us.codecraft.webmagic.downloader.HttpClientDownloader - downloading page http://www.goubanjia.com/free/index12.shtml
+00:21:29.733 [pool-1-thread-1] WARN  us.codecraft.webmagic.downloader.HttpClientDownloader - get page http://www.goubanjia.com/free/index12.shtml error, status code 500 
