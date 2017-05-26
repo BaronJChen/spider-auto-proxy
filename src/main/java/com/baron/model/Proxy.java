@@ -11,6 +11,12 @@ public class Proxy {
     // 支持的协议的类型，1为http，2为https，3为http与https
     private String protocolType;
 
+    public Proxy(String ip, Integer port, String protocolType) {
+        this.ip = ip;
+        this.port = port;
+        this.protocolType = protocolType;
+    }
+
     public String getIp() {
         return ip;
     }
