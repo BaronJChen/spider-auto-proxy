@@ -1,6 +1,7 @@
 package com.baron.warehouse;
 
 import com.baron.model.Proxy;
+import org.apache.http.annotation.ThreadSafe;
 
 import java.util.ArrayDeque;
 import java.util.Collection;
@@ -9,6 +10,7 @@ import java.util.Queue;
 /**
  * Created by Jason on 2017/5/19.
  */
+@ThreadSafe
 public class ProxyWareHouse {
     private static ProxyWareHouse proxyWareHouse;
 

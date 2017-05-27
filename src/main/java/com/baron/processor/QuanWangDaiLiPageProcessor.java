@@ -1,4 +1,4 @@
-package com.baron.spider.processor;
+package com.baron.processor;
 
 import org.apache.log4j.Logger;
 import us.codecraft.webmagic.Page;

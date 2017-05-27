@@ -1,8 +1,9 @@
-package com.baron.spider.pipeline;
+package com.baron.pipeline;
 
 import com.baron.model.Proxy;
 import com.baron.util.IpUtil;
 import com.baron.warehouse.ProxyWareHouse;
+import org.apache.http.annotation.ThreadSafe;
 import org.apache.log4j.Logger;
 import us.codecraft.webmagic.ResultItems;
 import us.codecraft.webmagic.Task;
@@ -15,6 +16,7 @@ import java.util.List;
 /**
  * Created by Jason on 2017/5/18.
  */
+@ThreadSafe
 public class QuanWangDaiLiPipeLine implements Pipeline {
     private static final Logger LOG = Logger.getLogger(QuanWangDaiLiPipeLine.class);
 

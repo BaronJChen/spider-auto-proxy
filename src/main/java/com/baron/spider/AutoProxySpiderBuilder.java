@@ -10,15 +10,8 @@ import org.springframework.stereotype.Component;
 /**
  * Created by Jason on 2017/5/27.
  */
-@Aspect
-@Component
-public class AutoProxy {
-    @Pointcut("within(com.baron..*)")
-    public void pointCut() {}
+public class AutoProxySpiderBuilder {
+   private AutoProxySpiderBuilder() {
 
-    @Before("pointCut()")
-    public boolean before(JoinPoint joinPoint) {
-        System.out.println(joinPoint.getSignature());
-        return true;
-    }
+   }
 }

@@ -1,6 +1,5 @@
-package com.baron.spider.processor;
+package com.baron.processor;
 
-import com.baron.spider.pipeline.QuanWangDaiLiPipeLine;
 import org.apache.log4j.Logger;
 import org.springframework.stereotype.Component;
 import us.codecraft.webmagic.Page;

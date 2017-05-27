@@ -1,4 +1,4 @@
-package com.baron.spider.pipeline;
+package com.baron.pipeline;
 
 import com.baron.model.Proxy;
 import com.baron.util.IpUtil;
