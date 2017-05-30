@@ -45,7 +45,7 @@
         <rollingPolicy
                 class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
             <fileNamePattern>
-                ${CATALINA_HOME}/logs/its_app_%d{yyyy-MM-dd}_error.log
+                logs/its_app_%d{yyyy-MM-dd}_error.log
             </fileNamePattern>
             <maxHistory>10</maxHistory>
         </rollingPolicy>
@@ -55,7 +55,7 @@
         </encoder>
     </appender>
 
-    <root level="DEBUG">
+    <root level="INFO">
         <appender-ref ref="RollingFileERROR"/>
         <appender-ref ref="RollingFileTRACE"/>
         <appender-ref ref="Console"/>

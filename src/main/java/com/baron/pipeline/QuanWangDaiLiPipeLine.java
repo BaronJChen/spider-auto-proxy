@@ -1,12 +1,12 @@
-package com.baron.spider.pipeline;
+package com.baron.pipeline;
 
-import com.baron.model.Proxy;
+import com.baron.data.ProxyWareHouse;
 import com.baron.util.IpUtil;
-import com.baron.warehouse.ProxyWareHouse;
+import org.apache.http.annotation.ThreadSafe;
 import org.apache.log4j.Logger;
 import us.codecraft.webmagic.ResultItems;
 import us.codecraft.webmagic.Task;
-import us.codecraft.webmagic.pipeline.Pipeline;
+import us.codecraft.webmagic.proxy.Proxy;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -15,31 +15,28 @@ import java.util.List;
 /**
  * Created by Jason on 2017/5/18.
  */
-public class QuanWangDaiLiPipeLine implements Pipeline {
+@ThreadSafe
+public class QuanWangDaiLiPipeLine extends DaiLiPipeLine {
     private static final Logger LOG = Logger.getLogger(QuanWangDaiLiPipeLine.class);
 
     public void process(ResultItems resultItems, Task task) {
-        LOG.info("quanwang daili pipeline process task " + task.getUUID());
-
         List<String> htmls = (List<String>) resultItems.get("ips");
-        List<String> ports = (List<String>) resultItems.get("ports");
-        List<String> protocolTypes = (List<String>) resultItems.get("protocolTypes");
-        List<Proxy> proxies = new ArrayList<>();
+        List<String> portStrings = (List<String>) resultItems.get("ports");
+        int size = htmls.size();
+        List<String> ips = new ArrayList<>(size);
+        List<Integer> ports = new ArrayList<>(size);
 
-        for (int i = 0; i < htmls.size(); ++i) {
+        for (int i = 0; i < size; ++i) {
             String ip = getIpFromHtml(htmls.get(i));
             if (!IpUtil.validate(ip)) {
                 continue;
             } // if
 
-            Proxy proxy = new Proxy(ip, Integer.parseInt(ports.get(i))
-                    , protocolTypes.get(i));
-
-            proxies.add(proxy);
+            ips.add(ip);
+            ports.add(Integer.parseInt(portStrings.get(i)));
         } // for
 
-        ProxyWareHouse.getProxyWarehouse().putAll(proxies);
-        System.out.println(String.format("there is %d proxies", ProxyWareHouse.getProxyWarehouse().count()));
+        addToWareHouse(ips, ports);
     }
 
     private String getIpFromHtml(String html) {
@@ -59,5 +56,11 @@ public class QuanWangDaiLiPipeLine implements Pipeline {
         } // for
 
         return ip;
+    }
+
+    @Override
+    public void afterDone(List<Proxy> proxies) {
+        ProxyWareHouse.getProxyWarehouse().putAll(proxies);
+        System.out.println(String.format("quan wang spider there is %d proxies", ProxyWareHouse.getProxyWarehouse().count()));
     }
 }
