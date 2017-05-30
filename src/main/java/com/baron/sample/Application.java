@@ -1,15 +1,14 @@
-import com.baron.spider.ProxyAddressSpiderBuilder;
-import com.baron.pipeline.QuanWangDaiLiPipeLine;
-import com.baron.processor.QuanWangDaiLiPageProcessor;
+package com.baron.sample;
+
+import com.baron.downloader.CyclicDownloader;
+import com.baron.spider.AutoProxySpiderBuilder;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import us.codecraft.webmagic.Spider;
-import us.codecraft.webmagic.pipeline.Pipeline;
-
-import java.util.Arrays;
+import us.codecraft.webmagic.downloader.HttpClientDownloader;
 
 /**
  * Created by Jason on 2017/5/18.
@@ -22,10 +21,12 @@ public class Application {
     }
 
     @Bean
-    public CommandLineRunner startKuaiDaLiSpider() {
+    public CommandLineRunner startAutoProxySpider() {
         return new CommandLineRunner() {
             public void run(String... strings) throws Exception {
-                ProxyAddressSpiderBuilder.createAllProxySpiders();
+                Spider spider = AutoProxySpiderBuilder.createAutoProxySpider(new GithubPageProcessor(), new CyclicDownloader());
+                spider.addUrl("https://github.com/gsh199449");
+                //spider.run();
             }
         };
     }

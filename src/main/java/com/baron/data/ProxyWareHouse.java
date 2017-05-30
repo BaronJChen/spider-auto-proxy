@@ -1,11 +1,11 @@
 package com.baron.data;
 
-import com.baron.model.Proxy;
 import com.baron.proxy.AutoProxyPool;
+import com.baron.util.IpUtil;
 import org.apache.commons.collections.keyvalue.DefaultMapEntry;
-import org.apache.http.HttpHost;
 import org.apache.http.annotation.ThreadSafe;
 import org.apache.log4j.Logger;
+import us.codecraft.webmagic.proxy.Proxy;
 
 import java.util.*;
 import java.util.function.Function;
@@ -93,6 +93,7 @@ public class ProxyWareHouse {
             flag |= this.put(proxy);
         } // for
 
+        IpUtil.checkProxy(proxies);
         return flag;
     }
 
@@ -104,12 +105,11 @@ public class ProxyWareHouse {
         function.apply(new DefaultMapEntry(pool, queue));
     }
 
-    public synchronized void removeByHttpHost(HttpHost httpHost) {
-        if (httpHost == null) {
+    public synchronized void remove(Proxy proxy) {
+        if (proxy == null) {
             return;
         } // if
 
-        Proxy proxy = new Proxy(httpHost);
         queue.remove(proxy);
     }
 

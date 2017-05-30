@@ -1,15 +1,13 @@
 package com.baron.pipeline;
 
-import com.baron.model.Proxy;
-import com.baron.util.IpUtil;
 import com.baron.data.ProxyWareHouse;
+import com.baron.util.IpUtil;
 import org.apache.http.annotation.ThreadSafe;
 import org.apache.log4j.Logger;
 import us.codecraft.webmagic.ResultItems;
 import us.codecraft.webmagic.Task;
-import us.codecraft.webmagic.pipeline.Pipeline;
+import us.codecraft.webmagic.proxy.Proxy;
 
-import java.net.UnknownHostException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -22,11 +20,8 @@ public class QuanWangDaiLiPipeLine extends DaiLiPipeLine {
     private static final Logger LOG = Logger.getLogger(QuanWangDaiLiPipeLine.class);
 
     public void process(ResultItems resultItems, Task task) {
-        LOG.info("quanwang daili pipeline process task " + task.getUUID());
-
         List<String> htmls = (List<String>) resultItems.get("ips");
         List<String> portStrings = (List<String>) resultItems.get("ports");
-        List<String> protocolTypes = (List<String>) resultItems.get("protocolTypes");
         int size = htmls.size();
         List<String> ips = new ArrayList<>(size);
         List<Integer> ports = new ArrayList<>(size);
@@ -41,7 +36,7 @@ public class QuanWangDaiLiPipeLine extends DaiLiPipeLine {
             ports.add(Integer.parseInt(portStrings.get(i)));
         } // for
 
-        addToWareHouse(ips, ports, protocolTypes);
+        addToWareHouse(ips, ports);
     }
 
     private String getIpFromHtml(String html) {

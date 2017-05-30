@@ -1,5 +1,6 @@
 package com.baron.spider;
 
+import com.baron.data.ProxyWareHouse;
 import com.baron.downloader.AutoProxyDownloader;
 import com.baron.downloader.CyclicDownloader;
 import com.baron.pipeline.KuaiDaiLiPipeLine;
@@ -17,10 +18,10 @@ import java.util.List;
  * Created by Jason on 2017/5/25.
  */
 public class ProxyAddressSpiderBuilder {
-    private static final String KUAI_DAI_LI_SEED = "http://www.kuaidaili.com";
+    private static final String KUAI_DAI_LI_SEED = "http://www.kuaidaili.com/free/intr/";
     private static final String QUAN_WANG_DAI_LI_SEED = "http://www.goubanjia.com/free/index2.shtml";
-    private static final int KUAI_DAI_LI_THREAD_NUM = 10;
-    private static final int QUAN_WANG_DAI_LI_THREAD_NUM = 20;
+    private static final int KUAI_DAI_LI_THREAD_NUM = 1;
+    private static final int QUAN_WANG_DAI_LI_THREAD_NUM = 1;
 
     private ProxyAddressSpiderBuilder() {}
 
@@ -43,5 +44,6 @@ public class ProxyAddressSpiderBuilder {
     public static void createAllProxySpiders() {
         createKuaiDaiLiSpider().runAsync();
         createQuanWangDaiLiSpider().runAsync();
+        while (ProxyWareHouse.getProxyWarehouse().count() < 10);
     }
 }
