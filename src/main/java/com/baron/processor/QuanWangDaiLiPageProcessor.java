@@ -17,7 +17,9 @@ public class QuanWangDaiLiPageProcessor implements PageProcessor {
         site = Site.me()
                 .setDomain(QUANWANGDAILI_DOMAIN)
                 .setCharset("utf-8")
-                .setTimeOut(3 * 1000)
+                .setTimeOut(10 * 1000)
+                .setRetryTimes(10)
+                .setCycleRetryTimes(10)
                 .addHeader("User-Agent", "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36");
     }
 

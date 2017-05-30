@@ -1,29 +1,16 @@
 package com.baron.proxy;
 
-import org.apache.http.HttpHost;
-import us.codecraft.webmagic.proxy.Proxy;
-import us.codecraft.webmagic.proxy.ProxyPool;
+import com.baron.model.Proxy;
 import us.codecraft.webmagic.proxy.SimpleProxyPool;
 
+import java.util.Collection;
+import java.util.Map;
+import java.util.function.Function;
+
 /**
- * Created by baron on 17-5-27.
+ * Created by Jason on 2017/5/30.
  */
-// ProxyPool只是控制代理，包含启用，禁用，删除代理等等都是在这边实现的
-public class AutoProxyPool implements ProxyPool {
-    // 下载完成之后会调用这段代码，用于告知代理池是否可用
-    @Override
-    public void returnProxy(HttpHost host, int statusCode) {
+public abstract class AutoProxyPool extends SimpleProxyPool {
 
-    }
-
-    @Override
-    // 返回一个代理
-    public Proxy getProxy() {
-        return null;
-    }
-
-    @Override
-    public boolean isEnable() {
-        return true;
-    }
+    public abstract Function<Map.Entry<AutoProxyPool, Collection<Proxy>>, Void> getAddProxies();
 }

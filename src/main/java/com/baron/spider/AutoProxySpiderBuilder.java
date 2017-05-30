@@ -1,17 +1,26 @@
 package com.baron.spider;
 
-import org.aspectj.lang.JoinPoint;
-import org.aspectj.lang.annotation.Aspect;
-import org.aspectj.lang.annotation.Before;
-import org.aspectj.lang.annotation.Pointcut;
-import org.springframework.context.annotation.EnableAspectJAutoProxy;
-import org.springframework.stereotype.Component;
+import com.baron.data.ProxyWareHouse;
+import com.baron.proxy.AutoProxyPool;
+import com.baron.proxy.SimpleAutoProxyPool;
+import us.codecraft.webmagic.Site;
+import us.codecraft.webmagic.Spider;
+import us.codecraft.webmagic.processor.PageProcessor;
 
 /**
  * Created by Jason on 2017/5/27.
  */
 public class AutoProxySpiderBuilder {
-   private AutoProxySpiderBuilder() {
+   private AutoProxySpiderBuilder() {}
 
+   public static Spider createAutoProxySpider(PageProcessor pageProcessor) {
+       AutoProxyPool pool = new SimpleAutoProxyPool();
+       ProxyWareHouse.getProxyWarehouse().registerProxyPool(pool, pool.getAddProxies());
+
+       Site site = pageProcessor.getSite();
+       site.enableHttpProxyPool();
+       site.setHttpProxyPool(pool);
+
+       return Spider.create(pageProcessor);
    }
 }

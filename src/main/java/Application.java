@@ -25,8 +25,7 @@ public class Application {
     public CommandLineRunner startKuaiDaLiSpider() {
         return new CommandLineRunner() {
             public void run(String... strings) throws Exception {
-                Spider spider = ProxyAddressSpiderBuilder.createQuanWangDaiLiSpider(new QuanWangDaiLiPageProcessor(), Arrays.asList((Pipeline) new QuanWangDaiLiPipeLine()));
-                spider.runAsync();
+                ProxyAddressSpiderBuilder.createAllProxySpiders();
             }
         };
     }
